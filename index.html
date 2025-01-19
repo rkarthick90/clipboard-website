@@ -336,12 +336,16 @@
     </script>
     <!-- START Userorbit SDK -->
     <script type="text/javascript">
-    !function(){
+     
+     !function(){
         var apiHost = "https://api.userorbit.com";
         var accountId =  "e452d7b6-98f5-4b57-8877-25c50f08721d";
         var userId = "test-id";
         var cdnHost =  "https://cdn.userorbit.com"
-        var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=cdnHost+"/userorbit.umd.cjs";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e),setTimeout(function(){window.userorbit.init({ accountId: accountId, apiHost: apiHost, userId: userId })},500)}();
+        var t=document.createElement("script");
+        t.type="text/javascript",t.async=!0,t.src=cdnHost+"/userorbit.umd.cjs";
+        var e=document.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(t,e),setTimeout(function(){window.userorbit.init({ accountId: accountId, apiHost: apiHost, userId: userId })},1000)}();
     </script>
     <!-- END Userorbit SDK -->
   </body>
