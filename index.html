@@ -335,7 +335,7 @@
       gtag('config', 'G-YZ206H0EWS');
     </script>
     <!-- START Userorbit SDK -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
      
      !function(){
         var apiHost = "https://api.userorbit.com";
@@ -346,7 +346,20 @@
         t.type="text/javascript",t.async=!0,t.src=cdnHost+"/userorbit.umd.cjs";
         var e=document.getElementsByTagName("script")[0];
         e.parentNode.insertBefore(t,e),setTimeout(function(){window.userorbit.init({ accountId: accountId, apiHost: apiHost, userId: userId })},1000)}();
-    </script>
+    </script> -->
     <!-- END Userorbit SDK -->
+
+          <!-- START Userorbit SDK -->
+          <script type="text/javascript">
+            !function(){
+                var apiHost = "https://api.userorbit.com"; // change if self hosted
+                var accountId =  "e452d7b6-98f5-4b57-8877-25c50f08721d";
+                var t=document.createElement("script");
+                t.type="text/javascript",t.async=!0,t.src=cdnHost+"/userorbit.umd.cjs";
+                var e=document.getElementsByTagName("script")[0];
+                e.parentNode.insertBefore(t,e),setTimeout(function(){window.userorbit.init({ accountId: accountId, apiHost: apiHost, userId: userId, email: email, name: name, attributes: attributes })},1000)}();
+            </script>
+            <!-- END Userorbit SDK -->
+        
   </body>
 </html>
